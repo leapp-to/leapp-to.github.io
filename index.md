@@ -1,15 +1,15 @@
 
-![LeApp Logo](https://raw.githubusercontent.com/leapp-to/leapp-to.github.io/master/img/leapp-logo.png)
+![LeApp Logo](img/leapp-logo.png)
 
 # Welcome to LeApp                                                         
                                                                                                                             
 ## Architecture overview                                                                                                
                                                                                                                             
 ### Big picture                                                                                                                                                                                                                                    
-![Big picture](https://raw.githubusercontent.com/leapp-to/leapp-to.github.io/master/img/arch-big-picture.png)
+![Big picture](img/arch-big-picture.png)
                                                                                                                             
 ### Execution flow
-![LeApp Logo](https://raw.githubusercontent.com/leapp-to/leapp-to.github.io/master/img/leapp-sequence-diagram.png)
+![LeApp Logo](img/leapp-sequence-diagram.png)
                                                                                                                                                                                                                                                       
 #### Legend: 
 1. <b>UI / CTL</b>
