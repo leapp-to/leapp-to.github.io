@@ -12,11 +12,8 @@
 ![LeApp Logo](img/leapp-sequence-diagram.png)
                                                                                                                                                                                                                                                       
 #### Legend: 
-1. <b>UI / CTL</b>
-   User interface is a web Cockpit plugin written in JavaScript.
-CTL is a shell application written in Python 2.7.
-
-   UI and CTL are clients which communicate with Daemon over HTTP protocol. 
+1. <b>Client</b>
+   Client can be web UI (cockpit plugin) or shell client, both communicate with Daemon over HTTP protocol. 
 You can execute specific commands (with custom options) and then read the output.
 
    By running specific command you're running specific workflow.
