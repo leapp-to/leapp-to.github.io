@@ -19,7 +19,7 @@ You can execute specific commands (with custom options) and then read the output
 You can find explanation what is workflow at point **4. Executor**
 
 2. **Daemon**
-   Application written in Golang 1.8.3, a bridge between UI / CTL and Executor, heart of LeApp.
+   A bridge between UI / CTL and Executor, heart of LeApp.
 
    Because of daemon-centric architecture we are able to use async calls easier than before and data exchange flow is much simpler.
 	
@@ -32,8 +32,6 @@ You can find explanation what is workflow at point **4. Executor**
 Those kind of information are not only useful for end-users, it is also useful for contributors to analyze migration process and improve it in the future.
 
 4. **Executor**
-   Application written in Python 2.7, executed locally by Daemon.
-
    Daemon passes specific workflow to Executor and then Executor is able to run bunch of actors contained in one workflow.
 
    What is workflow? Think about it as step-by-step recipe to achieve desired result.
