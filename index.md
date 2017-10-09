@@ -19,7 +19,7 @@ You can execute specific commands (with custom options) and then read the output
 You can find explanation what is workflow at point **4. Executor**
 
 2. **Daemon**
-   A bridge between UI / CTL and Executor, heart of LeApp.
+   A bridge between Client and Executor, heart of LeApp.
 
    Because of daemon-centric architecture we are able to use async calls easier than before and data exchange flow is much simpler.
 	
