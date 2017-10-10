@@ -1,18 +1,20 @@
 ![LeApp Logo](img/leapp-logo.png){:width="200px"}
 
-# Welcome to LeApp                                                         
-                                                                                                                            
-## Architecture overview                                                                                                
-                                                                                                                            
-### Big picture                                                                                                                                                                                                                                    
+# Welcome to LeApp
+
+[API Docs](/apidoc/index.html)
+
+## Architecture overview
+
+### Big picture
 ![Big picture](img/arch-big-picture.png)
-                                                                                                                            
+
 ### Execution flow
 ![LeApp Logo](img/leapp-sequence-diagram.png)
-                                                                                                                                                                                                                                                      
-#### Legend: 
+
+#### Legend:
 1. **Client**
-   Client can be web UI (cockpit plugin) or shell client, both communicate with Daemon over HTTP protocol. 
+   Client can be web UI (cockpit plugin) or shell client, both communicate with Daemon over HTTP protocol.
 You can execute specific commands (with custom options) and then read the output.
 
    By running specific command you're running specific workflow.
@@ -22,7 +24,7 @@ You can find explanation what is workflow at point **4. Executor**
    A bridge between Client and Executor, heart of LeApp.
 
    Because of daemon-centric architecture we are able to use async calls easier than before and data exchange flow is much simpler.
-	
+
    It exposes HTTP endpoints, saves information in Database, runs Executor and send back output to the clients.
 
 3. **Database**
@@ -35,13 +37,13 @@ Those kind of information are not only useful for end-users, it is also useful f
    Daemon passes specific workflow to Executor and then Executor is able to run bunch of actors contained in one workflow.
 
    What is workflow? Think about it as step-by-step recipe to achieve desired result.
-For example if you want to build a house you might have workflow like that: 
+For example if you want to build a house you might have workflow like that:
 	1. build foundations
-	2. build walls 
+	2. build walls
 	3. build roof
 
    So right now switch your mind to OS context, what kind of workflow do you need to move LAMP stack to macro-container or micro-containers environment?
-	
+
    Tip - think about:
 	1. OS configuration
 	2. Apps dependencies
