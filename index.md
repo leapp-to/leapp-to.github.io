@@ -14,9 +14,9 @@
 
 #### Legend: 
 1. **Client**
-  Face of the LeApp - Client can be web UI (cockpit plugin) or shell client, both communicate with Daemon over HTTP protocol.
+   Face of the LeApp - Client can be web UI (cockpit plugin) or shell client, both communicate with Daemon over HTTP protocol.
 
-  You can execute specific commands (with custom options) and then read the output after execution.
+   You can execute specific commands (with custom options) and then read the output after execution.
 
 2. **Daemon**
 Daemon exposes HTTP endpoints for Client. It runs Executor and save information about executed commands in Database.
