@@ -14,7 +14,7 @@
 
 #### Legend: 
 1. **Client**
-Face of the LeApp - Client can be web UI (cockpit plugin) or shell client, both communicate with Daemon over HTTP protocol.
+  Face of the LeApp - Client can be web UI (cockpit plugin) or shell client, both communicate with Daemon over HTTP protocol.
 
   You can execute specific commands (with custom options) and then read the output after execution.
 
@@ -45,6 +45,7 @@ For example if you want to build a house you might have workflow like that:
    Tip - think about:
  1. OS configuration
  2. Apps dependencies
+
  3. Apps config files
  4. Network (open ports, firewall rules etc.)
  5. Data
