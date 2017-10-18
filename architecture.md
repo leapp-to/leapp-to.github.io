@@ -57,4 +57,4 @@
    The result of above idea should be OpenShiftDeployment actor,
    it can be script which is using Open Shift API to deploy given app.
 
-   To get deep knowledge how to create your own actors visit: [link](https://github.com/leapp-to/leapp-actors)
+   To get deep knowledge how to create your own actors visit: [link](https://github.com/leapp-to/snactor/blob/master/docs/GETTING_STARTED.md)
