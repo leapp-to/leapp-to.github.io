@@ -2,7 +2,7 @@
  <div class="columns is-vcentered">                                                                              
   <div class="column is-5">                                                                                     
    <figure>                                                                              
-    <iframe src="https://www.youtube.com/embed/frwjSuAO7ls?autoplay=1&loop=1" width="640" height="480"></iframe>
+    <iframe src="https://www.youtube.com/embed/frwjSuAO7ls" width="640" height="480"></iframe>
    </figure>                                                                                                   
   </div>                                                                                                        
  <div class="column is-6 is-offset-1">                                                                         
