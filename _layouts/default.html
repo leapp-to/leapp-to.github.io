@@ -30,6 +30,9 @@
               <a class="nav-item is-tab" href="/architecture" id="architecture">
                 Architecture
               </a>
+              <a class="nav-item is-tab" href="/actors" id="actors">
+                Actors
+              </a>
               <a class="nav-item is-tab" target="_blank" href="/apidoc/index.html" onclick="event.stopPropagation();">
                 API
               </a>
@@ -68,15 +71,21 @@
     }
   </style>
   <script type="text/javascript">
-            function swapActive(add, remove) {
-                document.getElementById(remove).classList.remove("is-active");
-                document.getElementById(add).className += " is-active";
+            function swapActive(clsName) {
+                document.getElementsByClass("is-active")[0].classList.remove("is-active");
+                document.getElementById(clsName).className += " is-active";
             }
 
-            if (window.location.pathname == "/architecture") {
-                swapActive("architecture", "home");
-            } else {
-                swapActive("home", "architecture");
+            switch (window.location.pathname) {
+                case "/":
+                    swapActive("home");
+                    break;
+                case "/architecture":
+                    swapActive("architecture");
+                    break;
+                case "/actors":
+                    swapActive("actors");
+                    break;
             }
   </script>
 </body>
