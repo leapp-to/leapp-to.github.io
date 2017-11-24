@@ -77,7 +77,7 @@ Our directory structure will look like this:
 ## Running our new actor
 
 At this moment we are ready to execute our script as a snactor actor. To execute
-it you could either use **/usr/bin/snacto_runner** tool provided by snactor or write some
+it you could either use **/usr/bin/snactor_runner** tool provided by snactor or write some
 Python code to load and run our new actor using the library. We will provide
 some sample runner script to show how to use snactor to get an actor executed:
 
