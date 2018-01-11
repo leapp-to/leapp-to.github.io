@@ -17,19 +17,19 @@ and a set of pre-prepared [images](#vagrant).
 
 ## <a name="prereq"></a>1. Prerequisites
 
-#### Step 1) Enabling repositories containing the build & runtime libraries:**
+#### Step 1) Enabling repositories containing the build & runtime libraries:
 
 ```shell
     sudo dnf copr enable evilissimo/leapp
 ```
 
-#### Step 2) Installing the required tools:**
+#### Step 2) Installing the required tools:
 
 ```shell
     sudo dnf -y install git tito python2-pip
 ```
 
-#### Step 3) Setting up a project root**
+#### Step 3) Setting up a project root
 ```shell
     export LEAPP_HOME=$HOME/leapp
     mkdir -p $LEAPP_HOME
@@ -210,7 +210,7 @@ in the *root* folder of the project run:
 **Requires**
  + [Leapp daemon](#deamon)
 
-```shelcd $LEAPP_HOME/leappctll
+```shell
     cd $LEAPP_HOME/leappctl
     sudo make install
 ```
