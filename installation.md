@@ -11,7 +11,9 @@
         sudo dnf install git go -y
         ```
 
-* [leap-tool](https://github.com/leapp-to/leapp)
+* [leapp-tool](https://github.com/leapp-to/leapp)
+
+    Basis of leapp tool
 
     ```shell
     sudo dnf install leapp-tool -y
@@ -22,7 +24,7 @@
     * python-snactor
     * python2-leapp
 
-* [leap-cockpit](https://github.com/leapp-to/leapp)
+* [leapp-cockpit](https://github.com/leapp-to/leapp)
 
     Cockpit UI plugin
 
@@ -46,6 +48,8 @@
 
 * [leappctl](https://github.com/leapp-to/leappctl)
 
+	Leapp control tool
+
     ```shell
     git clone https://github.com/leapp-to/leappctl
     cd leappctl
@@ -53,6 +57,8 @@
     ```
 
 * [leapp-go](https://github.com/leapp-to/leapp-go)
+
+	Leapp daemon
 
     ```shell
     go get github.com/leapp-to/leapp-go/cmd/leapp-daemon
