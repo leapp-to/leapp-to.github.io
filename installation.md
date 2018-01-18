@@ -59,15 +59,14 @@
     sudo cp $(go env GOPATH)/bin/leapp-daemon /usr/bin/leapp-daemon
     ```
 
-* [leappwf] (https://github.com/leapp-to/leappwf)
+* [leappwf](https://github.com/leapp-to/leappwf)
 
-    no?
+    **TODO**
 
-[actor-browser] (https://github.com/leapp-to/actor-browser)
+* [actor-browser](https://github.com/leapp-to/actor-browser)
 
-	no?
+	**TODO**
 
-[actor-sdk] (https://github.com/leapp-to/actor-sdk)
+* [actor-sdk](https://github.com/leapp-to/actor-sdk)
 
-	no?
-
+	**TODO**
