@@ -65,10 +65,7 @@
     sudo cp $(go env GOPATH)/bin/leapp-daemon /usr/bin/leapp-daemon
     ```
 
-* [actor-browser](https://github.com/leapp-to/actor-browser)
-
-	**TODO**
-
-* [actor-sdk](https://github.com/leapp-to/actor-sdk)
-
-	**TODO**
+[comment]: # (actor-browser: https://github.com/leapp-to/actor-browser)
+[comment]: # (	not interesting for the instillation at this time)
+[comment]: # (actor-sdk: https://github.com/leapp-to/actor-sdk)
+[comment]: # (	currently in WIP state)
