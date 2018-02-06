@@ -20,7 +20,7 @@ Each actor should be stored in a single directory with name based on the actor n
 
 **_actor.yaml**: YAML file containing actor description used by Snactor library. This file will define used input/output channels and point to the script that will be executed by such actor. Even if not mandatory, a description should be provided in such file, in a way that developers can use it to understand purpose of an actor and how it is expected to work
 
-**script.ext**: Script file used by actor. A common practice is naming such script based on actor name. Another one is writing such script using Python or Bash script.
+**script.ext**: Script file used by actor. A common practice is naming such script based on actor name or use a common name between all actors, like **exec**. Another one is writing such script using Python or Bash script.
 
 It is a responsibility of actor’s writer to make sure that the actor’s directory contains all the necessary dependencies alongside the code. In other words, the actor should not rely on anything on the system on which the actor will be executed, except the following:
 Python 2.6+ installed
@@ -36,39 +36,41 @@ While creating a new actor or defining a new schema, is up to developer to name 
 
 **Schemas**: Currently divided into two groups: single value of a basic type, named after that type (i.e  “number”, “string”, “string_list” or “bool”) and composed ones, named after the representative data (i.e “redis”, “osversion” or “process_list”).
 
-Currently there is no hard rules about naming but some soft conventions are used:
+Convention in general for naming actors, schemas and directories:
 * Use descriptive names;
-* Use snake_case wherever it is necessary;
+* Use snake_case;
 * Do not start a schema name with “type_” since that is implicit;
 * Do not use “actor” in an actor name since that is implicit.
 
 
 ## Coding Guidelines
 
-Currently all existing actors are written using either Python or Bash script. When using Python you can also follow general Python guidelines for Leapp projects:
+Currently all existing actors are written using either Python or Bash script. When using Python you should also follow general Python guidelines for Leapp projects:
 https://github.com/leapp-to/guidelines/blob/master/python.md
 
-Also make sure that new code does not have any lint errors when possible, i.e run pep8, pylint, flake8 on your Python code. Automate testing of your code is always a good policy but how to properly implement that for actors is an open question.
+Also make sure that new code does not have any lint errors when possible, i.e run pep8, pylint, flake8 on your Python code and shellcheck for Bash. Automate testing of your code is always a good policy but how to properly implement that for actors is an open question.
 
 
 ## Actors Categorization by Tags
 
-Actors will be categorized according to the phase of the upgrade process each actor belong to.
+Actors can be categorized according to their purpose. For example the phase of the upgrade process an actor belongs to or if it is used for containerization or migration purposes.
 This may be a subject to change depending on Channel Data Model implementation details.
 
-For the moment the phases are defined as :
+For the moment, based on upgrade phases, the following tags are defined:
 * **Pre**
 * **Upgrade**
 * **Post**
 
 Additional tags: ( tentative)
 * **Info** ( or **Related**) - Denotes the actors, that do not affect upgrade process directly, but provide additional useful information. There may be a CLI/GUI option to filter this info out from the report.
+* **Containerization**
+* **Migration**
 
 This categorization will allow running the scan phase separately by choosing CLI/GUI option.
 Each actor will report a message to log. Part of the message will be the actor’s tag.
 
 
-## Actors Categorization by Result or Severity
+## Actors Categorization by Result
 
 The actors will have the following  result statuses, that will be printed in the user report.
 
