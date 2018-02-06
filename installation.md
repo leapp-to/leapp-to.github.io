@@ -1,6 +1,12 @@
 # Installing Leapp tool
 
+The Leapp tool is currently installable from rpm packages prepared for [Fedora 26 and 27](#fedora-26-and-27), [CentOS 7](#centos-7) and [RHEL 7](#rhel-7).
+
+If you want to install the Leapp tool on other distribution follow [these](#other-distributions) instructions.
+
 ## Fedora 26 and 27
+
+Enable the Leapp Copr repository and install the Leapp tool.
 
 ```shell
 sudo dnf install -y dnf-plugins-core
@@ -9,6 +15,8 @@ sudo dnf install -y leapp
 ```
 
 ## CentOS 7
+
+Add the Leapp Copr repository and EPEL repository (for additional dependencies not installable from default repositories) and install the Leapp tool.
 
 ```shell
 sudo yum install -y yum-utils
