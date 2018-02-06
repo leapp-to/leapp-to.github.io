@@ -27,10 +27,12 @@ sudo yum install -y leapp
 
 ## RHEL 7
 
+Add the Leapp Copr repository and EPEL repository and enable `rhel-7-server-extras-rpms` repository (for additional dependencies not installable from default repositories) and install the Leapp tool.
+
 ```shell
 sudo curl https://copr.fedorainfracloud.org/coprs/g/leapp/leapp-devel/repo/epel-7/group_leapp-leapp-devel-epel-7.repo -o /etc/yum.repos.d/group_leapp-leapp-devel-epel-7.repo
-sudo yum install -y http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-10.noarch.rpm
-sudo subscription-manager --enable rhel-7-server-extras-rpms
+sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo subscription-manager repos --enable=rhel-7-server-extras-rpms
 sudo yum install -y leapp
 ```
 
