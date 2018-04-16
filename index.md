@@ -1,6 +1,6 @@
 <div class="container has-text-centered">
- <div class="columns is-vcentered">
- <div class="column is-5">
+ <div class="columns is-centered">
+ <div class="column is-half">
   <h1 class="title is-2">
    Leapp
   </h1>
