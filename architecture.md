@@ -2,17 +2,18 @@
 
 ![Architecture overview](img/framework-arch-overview.png)
 
-There are two tools for working with the framework, the end user application `leapp` and the development utility `snactor`. The `leapp` tool is designed to run specific workflows, while `snactor` can run arbitrary workflows but also individual [actors](/actors).
+There are two tools for working with the framework, the end user application `Leapp` and the development utility `Snactor`. The `Leapp` tool is designed to run specific workflows, while the `Snactor` tool can run arbitrary workflows, but also individual [actors](/actors).
 
-A *workflow* describes what work is going to get done and when. Each workflow is made of a sequence of *phases* which contain *actors* split into 3 stages - before, main and after. Workflows, actors and all the parts necessary for the execution are loaded from repositories.
+A *workflow* describes what work is going to be done and when. Each workflow is made of a sequence of *phases*, which contain *actors* split into three stages - before, main, and after. Workflows, actors, and all the parts necessary for the execution are loaded from repositories.
 
-Each actor is executed in a forked child process to prevent modification of application state. All messages and logs produced by the actors are stored in the *audit database*.
-
-For more information about each part of the architecture, check [terminology](http://leapp.readthedocs.io/en/latest/terminology.html).
+Each actor is executed in a forked child process to prevent the modification of the application state. All messages and logs produced by the actors are stored in the *audit database*.
 
 
-### How is this different from ansible?
+For more information about each part of the architecture, check the [terminology](http://leapp.readthedocs.io/en/latest/terminology.html).
 
-Leapp is message-driven. Execution of actors is dependent on data produced by other actors running before them. This data is passed around in form of *messages*.
-This is in stark contrast with Ansible where everything has to be specified up front.
+
+### How is this different from Ansible?
+
+Leapp is message-driven. The execution of actors is dependent on the data produced by other actors running before them. This data is passed around in the form of *messages*.
+This is in a contrast with Ansible where everything has to be specified up front.
 
