@@ -13,6 +13,6 @@ For more information about each part of the architecture, check [terminology](ht
 
 ### How is this different from ansible?
 
-Leapp is event-driven. Execution of actors is dependent on data produced by other actors running before them. This data is passed around in form of *messages*.
+Leapp is message-driven. Execution of actors is dependent on data produced by other actors running before them. This data is passed around in form of *messages*.
 This is in stark contrast with Ansible where everything has to be specified up front.
 
