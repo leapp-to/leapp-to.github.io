@@ -8,6 +8,11 @@ A *workflow* describes what work is going to get done and when. Each workflow is
 
 Each actor is executed in a forked child process to prevent modification of application state. All messages and logs produced by the actors are stored in the *audit database*.
 
-
 For more information about each part of the architecture, check [terminology](http://leapp.readthedocs.io/en/latest/terminology.html).
+
+
+### How is this different from ansible?
+
+Leapp is event-driven. Execution of actors is dependent on data produced by other actors running before them. This data is passed around in form of *messages*.
+This is in stark contrast with Ansible where everything has to be specified up front.
 
