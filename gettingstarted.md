@@ -2,7 +2,7 @@
 
 Leapp is currently installable from RPM packages prepared for [Fedora](#fedora) 26, 27, and 28, [CentOS 7](#centos-7), and [Red Hat Enterprise Linux 7](#rhel-7).
 
-If you are using a different distribution, or you want to build and install Leapp on your own, follow these [instructions](/devenv).
+If you are using a different distribution, or you want to build and install Leapp on your own, follow these [instructions](http://leapp.readthedocs.io/en/latest/devenv-install.html).
 
 ## Fedora
 
