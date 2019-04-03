@@ -18,28 +18,6 @@
                 <img src="img/leapp-logo.png" alt="LeApp">
               </a>
             </div>
-            <span class="nav-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-            <div class="nav-right nav-menu">
-              <a class="nav-item is-tab is-active" href="/" id="home">
-                Home
-              </a>
-              <a class="nav-item is-tab" href="/gettingstarted" id="gettingstarted">
-                Getting started
-              </a>
-              <a class="nav-item is-tab" href="/actors" id="actors">
-                Actors
-              </a>
-              <a class="nav-item is-tab" href="/architecture" id="architecture">
-                Architecture
-              </a>
-              <a class="nav-item is-tab" href="/upgrades" id="upgrades">
-                In-place Upgrades
-              </a>
-            </div>
           </div>
         </nav>
       </div>
@@ -73,29 +51,6 @@
         color: #d10000;
     }
   </style>
-  <script type="text/javascript">
-            function swapActive(clsName) {
-                document.getElementsByClassName("is-active")[0].classList.remove("is-active");
-                document.getElementById(clsName).className += " is-active";
-            }
-
-            switch (window.location.pathname) {
-                case "/":
-                    swapActive("home");
-                    break;
-                case "/architecture":
-                    swapActive("architecture");
-                    break;
-                case "/actors":
-                    swapActive("actors");
-                    break;
-                case "/gettingstarted":
-                    swapActive("gettingstarted");
-                    break;
-                case "/upgrades":
-                    swapActive("upgrades");
-            }
-  </script>
 </body>
 </html>
 
